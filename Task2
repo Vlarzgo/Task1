@@ -1,0 +1,17 @@
+/*
+3) Заполнить массив из 10 элементов случайными целыми числами от 10(включительно) до 20(включительно).
+Вывести среднее арифметическое.
+ */
+public class homework1_2 {
+    
+    public static void main(String[] args) {
+        int[] randomArray = new int[10];
+        double amount = 0;
+        for (int i = 0; i < 10; i++) {
+            randomArray[i] = (int) (Math.random() * 11 + 10);
+            amount = amount + randomArray[i];
+        }
+        System.out.println("Average is " + amount / 10);
+    }
+
+}
